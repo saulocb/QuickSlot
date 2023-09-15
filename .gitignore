@@ -94,3 +94,10 @@ __pycache__/
 # ---- Other Tools ---- #
 # Tye
 .tye/
+/QuickSlot.UserService/QuickSlot.UserService.Api.Tests/bin/Debug/net6.0/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/QuickSlot.UserService/QuickSlot.UserService.Api.Tests/bin/Debug/net6.0
+/QuickSlot.UserService/QuickSlot.UserService.Api.Tests/obj/Debug/net6.0/QuickSlot.UserService.Tests.genruntimeconfig.cache
+/QuickSlot.UserService/QuickSlot.UserService.Api.Tests/obj/Debug/net6.0/QuickSlot.UserService.Tests.csproj.CopyComplete
+/QuickSlot.UserService/QuickSlot.UserService.Api.Tests/obj/Debug/net6.0/QuickSlot.UserService.Tests.dll
+/QuickSlot.UserService/QuickSlot.UserService.Api.Tests/obj/Debug/net6.0/QuickSlot.UserService.Tests.pdb
+/QuickSlot.UserService/QuickSlot.UserService.Api.Tests/obj/Debug/net6.0/ref/QuickSlot.UserService.Tests.dll
