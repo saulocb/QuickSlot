@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "+uco56nwPeDjlyMcGOBOFuW0pO919l51zk3bMcttwj4Xo5N02FnFlxj8wo6edofumqj3z7ob2DL0P4ynlVY6yQ==",
+  "dgSpecHash": "api2fB/ko9iC5s8Hc67l425vyP5FNhewqT5JEnn8VnQwazDavzjr+AvMSOOdsPZfM23iwzqg/Fh1JCNMOgLXow==",
   "success": true,
   "projectFilePath": "C:\\aws\\QuickSlot\\QuickSlot.UserService\\QuickSlot.UserService.Domain\\QuickSlot.UserService.Domain.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\saulo\\.nuget\\packages\\awssdk.core\\3.7.202.9\\awssdk.core.3.7.202.9.nupkg.sha512",
+    "C:\\Users\\saulo\\.nuget\\packages\\awssdk.dynamodbv2\\3.7.201.11\\awssdk.dynamodbv2.3.7.201.11.nupkg.sha512",
     "C:\\Users\\saulo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
   ],
   "logs": []

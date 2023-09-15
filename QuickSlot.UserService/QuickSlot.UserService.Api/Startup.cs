@@ -1,10 +1,11 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using MediatR;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using QuickSlot.UserService.Application;
 using QuickSlot.UserService.Domain;
 using QuickSlot.UserService.Infrastructure;
-
+using System.Reflection;
 
 namespace QuickSlot.UserService.Api
 {
@@ -23,7 +24,7 @@ namespace QuickSlot.UserService.Api
             services.AddApplicationServices();
             services.AddInfrastructureServices(Configuration);
             services.AddDomainServices();
-           
+           // services.AddMediatR(typeof(Startup).Assembly, typeof(Startup).Assembly);
         }
 
         public void Configure(IApplicationBuilder app)

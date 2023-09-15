@@ -8,10 +8,30 @@
     ".NETCoreApp,Version=v6.0": {
       "QuickSlot.UserService.Domain/1.0.0": {
         "dependencies": {
+          "AWSSDK.DynamoDBv2": "3.7.201.11",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
         },
         "runtime": {
           "QuickSlot.UserService.Domain.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.7.202.9": {
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.202.9"
+          }
+        }
+      },
+      "AWSSDK.DynamoDBv2/3.7.201.11": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.202.9"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.DynamoDBv2.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.201.11"
+          }
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions/7.0.0": {
@@ -29,6 +49,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AWSSDK.Core/3.7.202.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hjIewc55pKljVXx+6vX/+8u/2BRnoaFeqnQRiauKonWKh58IRA99wrSUlfTrSEqAca+lVUNyEkyt2zNsFDis1w==",
+      "path": "awssdk.core/3.7.202.9",
+      "hashPath": "awssdk.core.3.7.202.9.nupkg.sha512"
+    },
+    "AWSSDK.DynamoDBv2/3.7.201.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3Veoci7Rj/N5acl9p/wa7CIPpJYdCBeHVTPUGrYWeNOMo2rEBcobHnfmbnGIObeeeDb/CeDT2Aku7kpy8/Oliw==",
+      "path": "awssdk.dynamodbv2/3.7.201.11",
+      "hashPath": "awssdk.dynamodbv2.3.7.201.11.nupkg.sha512"
     },
     "Microsoft.Extensions.DependencyInjection.Abstractions/7.0.0": {
       "type": "package",

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace QuickSlot.UserService.Domain.Interfaces
 {
-    public interface IBaseRepository<T> where T : class
+    public interface IBaseRepository<T> where T : class, IDynamoDbModel
     {
         Task SaveAsync(T entity, CancellationToken cancellationToken = default);
         Task<T> GetByIdAsync(object id, CancellationToken cancellationToken = default);

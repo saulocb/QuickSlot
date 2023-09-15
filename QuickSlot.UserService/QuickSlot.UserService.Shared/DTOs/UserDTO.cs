@@ -8,7 +8,7 @@ namespace QuickSlot.UserService.Shared.DTOs
 {
     public class UserDTO
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
+        public string? Id { get; set; }
+        public string? Name { get; set; }
     }
 }

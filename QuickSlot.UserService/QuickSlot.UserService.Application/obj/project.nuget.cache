@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "pyR3aQjsMiGTfArVt0K+tljPV1xfyN9GmjqkQUF1BvWxwrujcbkixJOr9xeeys+uuIaddKoTUaYyMSCkIac0Tw==",
+  "dgSpecHash": "4gdSADiFMttLHbIQ1WZQIyQ7J4tCOo1A1MbYXFEKijNvEKVNt0yIf3DysJyuqCEn046W2FVq0Kv/P89tiVMqrA==",
   "success": true,
   "projectFilePath": "C:\\aws\\QuickSlot\\QuickSlot.UserService\\QuickSlot.UserService.Application\\QuickSlot.UserService.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\saulo\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
-    "C:\\Users\\saulo\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
-    "C:\\Users\\saulo\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\saulo\\.nuget\\packages\\awssdk.core\\3.7.202.9\\awssdk.core.3.7.202.9.nupkg.sha512",
+    "C:\\Users\\saulo\\.nuget\\packages\\awssdk.dynamodbv2\\3.7.201.11\\awssdk.dynamodbv2.3.7.201.11.nupkg.sha512",
+    "C:\\Users\\saulo\\.nuget\\packages\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
+    "C:\\Users\\saulo\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\saulo\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "C:\\Users\\saulo\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\saulo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
   ],

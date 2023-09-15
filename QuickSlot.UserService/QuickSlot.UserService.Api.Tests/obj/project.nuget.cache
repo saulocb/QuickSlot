@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4MPJ7mHxX2gGh7SeUAeHMCDPMMfAHe4pS8Up8h0rmqk/bvReiHaVOdOKTSPdpwA1wWBIvs3XSyYdB7oBGUsUuQ==",
+  "dgSpecHash": "lw9Whk0KueyuLELoXHpNScDmVN38FatOpIc37Z1E4XgB/HsQeKDJsKePnYfzKYWJyE2zf0COnzIWrD8WLyposg==",
   "success": true,
   "projectFilePath": "C:\\aws\\QuickSlot\\QuickSlot.UserService\\QuickSlot.UserService.Api.Tests\\QuickSlot.UserService.Tests.csproj",
   "expectedPackageFiles": [
@@ -15,8 +15,9 @@
     "C:\\Users\\saulo\\.nuget\\packages\\awssdk.core\\3.7.202.9\\awssdk.core.3.7.202.9.nupkg.sha512",
     "C:\\Users\\saulo\\.nuget\\packages\\awssdk.dynamodbv2\\3.7.201.11\\awssdk.dynamodbv2.3.7.201.11.nupkg.sha512",
     "C:\\Users\\saulo\\.nuget\\packages\\awssdk.extensions.netcore.setup\\3.7.7\\awssdk.extensions.netcore.setup.3.7.7.nupkg.sha512",
-    "C:\\Users\\saulo\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
-    "C:\\Users\\saulo\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\saulo\\.nuget\\packages\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
+    "C:\\Users\\saulo\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\saulo\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "C:\\Users\\saulo\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\saulo\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
     "C:\\Users\\saulo\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.2.0\\microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",

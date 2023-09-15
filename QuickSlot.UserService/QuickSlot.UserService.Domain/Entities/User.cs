@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Amazon.DynamoDBv2.DataModel;
+using QuickSlot.UserService.Domain.Enum;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,11 +8,20 @@ using System.Threading.Tasks;
 
 namespace QuickSlot.UserService.Domain.Entities
 {
-    public class User
+    [DynamoDBTable("UserTable")]
+    public class User : DynamoEntityBase
     {
-        public int Id { get; private set; }
-        public string Name { get; private set; }
+        [DynamoDBProperty]
+        public string? Name { get; set; }
 
-        // Additional properties and methods
+        [DynamoDBProperty]
+        public UserType UserType { get; set; }
+
+        [DynamoDBProperty]
+        public string? Email { get; set; }
+
+        [DynamoDBProperty]
+        public string? PhoneNumber { get; set; }
     }
+
 }

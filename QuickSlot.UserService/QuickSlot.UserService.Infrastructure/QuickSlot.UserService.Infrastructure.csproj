@@ -9,7 +9,6 @@
   <ItemGroup>
     <Folder Include="Database\DynamoDB\" />
     <Folder Include="Messaging\AWS_SQS\" />
-    <Folder Include="Interfaces\" />
   </ItemGroup>
 
   <ItemGroup>
