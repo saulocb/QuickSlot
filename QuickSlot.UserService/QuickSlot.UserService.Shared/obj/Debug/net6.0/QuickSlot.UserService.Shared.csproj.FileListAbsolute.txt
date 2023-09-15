@@ -1,0 +1,12 @@
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Shared\bin\Debug\net6.0\QuickSlot.UserService.Shared.deps.json
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Shared\bin\Debug\net6.0\QuickSlot.UserService.Shared.dll
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Shared\bin\Debug\net6.0\ref\QuickSlot.UserService.Shared.dll
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Shared\bin\Debug\net6.0\QuickSlot.UserService.Shared.pdb
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Shared\obj\Debug\net6.0\QuickSlot.UserService.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Shared\obj\Debug\net6.0\QuickSlot.UserService.Shared.AssemblyInfoInputs.cache
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Shared\obj\Debug\net6.0\QuickSlot.UserService.Shared.AssemblyInfo.cs
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Shared\obj\Debug\net6.0\QuickSlot.UserService.Shared.csproj.CoreCompileInputs.cache
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Shared\obj\Debug\net6.0\QuickSlot.UserService.Shared.dll
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Shared\obj\Debug\net6.0\ref\QuickSlot.UserService.Shared.dll
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Shared\obj\Debug\net6.0\QuickSlot.UserService.Shared.pdb
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Shared\obj\Debug\net6.0\QuickSlot.UserService.Shared.csproj.AssemblyReference.cache

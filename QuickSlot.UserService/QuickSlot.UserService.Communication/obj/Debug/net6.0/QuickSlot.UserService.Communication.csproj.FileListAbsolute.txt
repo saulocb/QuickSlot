@@ -1,0 +1,11 @@
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Communication\bin\Debug\net6.0\QuickSlot.UserService.Communication.deps.json
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Communication\bin\Debug\net6.0\QuickSlot.UserService.Communication.dll
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Communication\bin\Debug\net6.0\ref\QuickSlot.UserService.Communication.dll
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Communication\bin\Debug\net6.0\QuickSlot.UserService.Communication.pdb
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Communication\obj\Debug\net6.0\QuickSlot.UserService.Communication.GeneratedMSBuildEditorConfig.editorconfig
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Communication\obj\Debug\net6.0\QuickSlot.UserService.Communication.AssemblyInfoInputs.cache
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Communication\obj\Debug\net6.0\QuickSlot.UserService.Communication.AssemblyInfo.cs
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Communication\obj\Debug\net6.0\QuickSlot.UserService.Communication.csproj.CoreCompileInputs.cache
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Communication\obj\Debug\net6.0\QuickSlot.UserService.Communication.dll
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Communication\obj\Debug\net6.0\ref\QuickSlot.UserService.Communication.dll
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Communication\obj\Debug\net6.0\QuickSlot.UserService.Communication.pdb

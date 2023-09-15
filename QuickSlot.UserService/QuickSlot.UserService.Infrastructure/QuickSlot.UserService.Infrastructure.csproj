@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Database\DynamoDB\" />
+    <Folder Include="Messaging\AWS_SQS\" />
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.7.201.11" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
+	<PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="3.7.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\QuickSlot.UserService.Application\QuickSlot.UserService.Application.csproj" />
+    <ProjectReference Include="..\QuickSlot.UserService.Domain\QuickSlot.UserService.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

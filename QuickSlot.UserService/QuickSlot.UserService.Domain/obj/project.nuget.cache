@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "+uco56nwPeDjlyMcGOBOFuW0pO919l51zk3bMcttwj4Xo5N02FnFlxj8wo6edofumqj3z7ob2DL0P4ynlVY6yQ==",
+  "success": true,
+  "projectFilePath": "C:\\aws\\QuickSlot\\QuickSlot.UserService\\QuickSlot.UserService.Domain\\QuickSlot.UserService.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\saulo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

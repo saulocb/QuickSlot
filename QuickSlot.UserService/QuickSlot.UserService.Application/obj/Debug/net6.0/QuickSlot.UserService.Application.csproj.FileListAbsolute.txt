@@ -1,0 +1,17 @@
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Application\obj\Debug\net6.0\QuickSlot.UserService.Application.csproj.AssemblyReference.cache
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Application\obj\Debug\net6.0\QuickSlot.UserService.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Application\obj\Debug\net6.0\QuickSlot.UserService.Application.AssemblyInfoInputs.cache
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Application\obj\Debug\net6.0\QuickSlot.UserService.Application.AssemblyInfo.cs
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Application\obj\Debug\net6.0\QuickSlot.UserService.Application.csproj.CoreCompileInputs.cache
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Application\bin\Debug\net6.0\QuickSlot.UserService.Application.deps.json
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Application\bin\Debug\net6.0\QuickSlot.UserService.Application.dll
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Application\bin\Debug\net6.0\ref\QuickSlot.UserService.Application.dll
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Application\bin\Debug\net6.0\QuickSlot.UserService.Application.pdb
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Application\bin\Debug\net6.0\QuickSlot.UserService.Domain.dll
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Application\bin\Debug\net6.0\QuickSlot.UserService.Shared.dll
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Application\bin\Debug\net6.0\QuickSlot.UserService.Domain.pdb
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Application\bin\Debug\net6.0\QuickSlot.UserService.Shared.pdb
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Application\obj\Debug\net6.0\QuickSlot.UserService.Application.csproj.CopyComplete
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Application\obj\Debug\net6.0\QuickSlot.UserService.Application.dll
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Application\obj\Debug\net6.0\ref\QuickSlot.UserService.Application.dll
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Application\obj\Debug\net6.0\QuickSlot.UserService.Application.pdb

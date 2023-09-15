@@ -1,0 +1,5 @@
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Api.Tests\obj\Debug\net6.0\QuickSlot.UserService.Tests.csproj.AssemblyReference.cache
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Api.Tests\obj\Debug\net6.0\QuickSlot.UserService.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Api.Tests\obj\Debug\net6.0\QuickSlot.UserService.Tests.AssemblyInfoInputs.cache
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Api.Tests\obj\Debug\net6.0\QuickSlot.UserService.Tests.AssemblyInfo.cs
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Api.Tests\obj\Debug\net6.0\QuickSlot.UserService.Tests.csproj.CoreCompileInputs.cache
