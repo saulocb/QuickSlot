@@ -1,0 +1,96 @@
+# ---- Visual Studio and .NET ---- #
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Use this if you're using Rider IDE
+.idea/
+
+# Roslyn cache directories
+*.ide/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows thumbnail cache files
+._*
+
+# ---- VS Code ---- #
+.vscode/
+*.code-workspace
+
+# ---- Mac OS ---- #
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# ---- Mono and Xamarin ---- #
+# User-specific files (MonoDevelop/Xamarin Studio)
+*.userprefs
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# ---- .NET Core ---- #
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ---- Tye ---- #
+.tye/
+
+# ---- NodeJS ---- #
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# ---- Python ---- #
+__pycache__/
+*.py[cod]
+*.env
+
+# ---- Java ---- #
+*.class
+*.jar
+*.war
+*.ear
+*.logs
+
+# ---- Other Temporary Files ---- #
+*.bak
+*.swp
+*.swo
+*.tmp
+*.temp
+
+# ---- Other Tools ---- #
+# Tye
+.tye/
