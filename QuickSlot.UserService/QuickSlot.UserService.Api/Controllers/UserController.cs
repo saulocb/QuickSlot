@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using MediatR;
+using Microsoft.AspNetCore.Mvc;
+using QuickSlot.UserService.Application.CQRS.Commands;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -11,15 +13,20 @@ namespace QuickSlot.UserService.Api.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
+        private readonly IMediator _mediator;
+
         private static readonly ConcurrentDictionary<string, string> Items = new ConcurrentDictionary<string, string>();
 
+        public UserController(IMediator mediator)
+        {
+            _mediator = mediator;
+        }
+
         [HttpPost]
-        public IActionResult Create([FromBody] KeyValuePair<string, string> item)
-        { 
-            if (Items.TryAdd(item.Key, item.Value))
-                return CreatedAtAction(nameof(Read), new { key = item.Key }, item);
-            else
-                return Conflict("An item with the same key already exists.");
+        public async Task<ActionResult<int>> Create([FromBody] CreateUserCommand command)
+        {
+            var userId = await _mediator.Send(command);
+            return Ok(userId);
         }
 
         [HttpGet("{key}")]
