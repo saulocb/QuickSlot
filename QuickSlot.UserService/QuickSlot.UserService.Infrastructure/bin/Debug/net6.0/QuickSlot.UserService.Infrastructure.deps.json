@@ -208,7 +208,6 @@
         "dependencies": {
           "AWSSDK.DynamoDBv2": "3.7.201.11",
           "MediatR": "11.1.0",
-          "MediatR.Extensions.Microsoft.DependencyInjection": "11.1.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
         },
         "runtime": {

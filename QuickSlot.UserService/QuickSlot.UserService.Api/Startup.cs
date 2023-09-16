@@ -36,9 +36,6 @@ namespace QuickSlot.UserService.Api
             {
                 config.AddConsole();
             });
-            services.AddMediatR(Assembly.GetExecutingAssembly());
-
-
         }
 
         public void Configure(IApplicationBuilder app)

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "cNocCC7XaHL+SPUDwzyEceCs8Z9seIlYOIBiqh5MUMP9hk9aCiAEVHBv0OURisniaNyIOVqBbOAI1JTb3Iy+Eg==",
+  "dgSpecHash": "Oh6AvrydtghZf63VnKVj6AIIW9s/zYwiX3EzGev2HoARU4L1eewbBrPsv/M1gPK/pcolu3hCsmPPBpvV3J41xQ==",
   "success": true,
   "projectFilePath": "C:\\aws\\QuickSlot\\QuickSlot.UserService\\QuickSlot.UserService.Domain\\QuickSlot.UserService.Domain.csproj",
   "expectedPackageFiles": [
@@ -8,7 +8,6 @@
     "C:\\Users\\saulo\\.nuget\\packages\\awssdk.dynamodbv2\\3.7.201.11\\awssdk.dynamodbv2.3.7.201.11.nupkg.sha512",
     "C:\\Users\\saulo\\.nuget\\packages\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
     "C:\\Users\\saulo\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
-    "C:\\Users\\saulo\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "C:\\Users\\saulo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
   ],
   "logs": []
