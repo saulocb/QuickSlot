@@ -36,6 +36,8 @@ namespace QuickSlot.UserService.Api
             {
                 config.AddConsole();
             });
+            services.AddMediatR(Assembly.GetExecutingAssembly());
+
 
         }
 

@@ -8,7 +8,6 @@ using System.Threading.Tasks;
 
 namespace QuickSlot.UserService.Domain.Entities
 {
-    [DynamoDBTable("UserTable")]
     public class User : DynamoEntityBase
     {
         [DynamoDBProperty]
@@ -22,6 +21,30 @@ namespace QuickSlot.UserService.Domain.Entities
 
         [DynamoDBProperty]
         public string? Email { get; set; }
+
+        [DynamoDBProperty]
+        public Address? Address { get; private set; }
+
+        [DynamoDBProperty]
+        public Contact? Contact { get; private set; }
+
+        [DynamoDBProperty]
+        public BillPaymentMethod? BillPaymentMethod { get; private set; }
+
+        public void UpdateAddress(Address newAddress)
+        {
+            Address = newAddress;
+        }
+
+        public void UpdateContact(Contact newContact)
+        {
+            Contact = newContact;
+        }
+
+        public void UpdateBillPaymentMethod(BillPaymentMethod newMethod)
+        {
+            BillPaymentMethod = newMethod;
+        }
     }
 
 }

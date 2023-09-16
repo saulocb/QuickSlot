@@ -31,6 +31,7 @@ namespace QuickSlot.UserService.Api.Controllers
             }
 
             var userId = await _mediator.Send(command);
+
             return Ok(userId);
         }
 

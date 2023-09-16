@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "QTuGXTzOmd0XzOsy01Z+VudOb/bBPnV/Zl4El6leZOsZ8lEeNT/6Y3nQw7Ijf3f1hpjWq+Z312g6QA1f2knlEg==",
+  "dgSpecHash": "hZGJ2vOfulYi52So6V2qXN2Iiyf7/kx+aXneP4ACk5G7+bZdZNe6m7VesDVcwLnRGSqvQlxAcjtWWrWCRTIL9w==",
   "success": true,
   "projectFilePath": "C:\\aws\\QuickSlot\\QuickSlot.UserService\\QuickSlot.UserService.Api.Tests\\QuickSlot.UserService.Tests.csproj",
   "expectedPackageFiles": [

@@ -11,6 +11,7 @@ namespace QuickSlot.UserService.Application
         {
             services.AddMediatR(Assembly.GetExecutingAssembly());
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
+
             return services;
         }
     }
