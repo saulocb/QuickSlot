@@ -2,10 +2,12 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using QuickSlot.UserService.Application;
 using QuickSlot.UserService.Domain;
 using QuickSlot.UserService.Infrastructure;
 using System.Reflection;
+using System.Text.Json.Serialization;
 
 namespace QuickSlot.UserService.Api
 {
@@ -24,7 +26,17 @@ namespace QuickSlot.UserService.Api
             services.AddApplicationServices();
             services.AddInfrastructureServices(Configuration);
             services.AddDomainServices();
-           // services.AddMediatR(typeof(Startup).Assembly, typeof(Startup).Assembly);
+
+            services.AddControllers().AddJsonOptions(options =>
+            {
+                options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+            });
+
+            services.AddLogging(config =>
+            {
+                config.AddConsole();
+            });
+
         }
 
         public void Configure(IApplicationBuilder app)

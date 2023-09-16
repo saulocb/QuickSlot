@@ -10,10 +10,10 @@ namespace QuickSlot.UserService.Domain.Interfaces
     public interface IDynamoDbModel
     {
         [DynamoDBHashKey]
-        string PK { get; set; }
+        string? PK { get; set; }
 
         [DynamoDBRangeKey]
-        string SK { get; set; }
+        string? SK { get; set; }
     }
 
 }

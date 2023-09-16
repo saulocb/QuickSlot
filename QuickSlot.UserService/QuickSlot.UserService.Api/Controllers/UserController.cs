@@ -25,6 +25,11 @@ namespace QuickSlot.UserService.Api.Controllers
         [HttpPost]
         public async Task<ActionResult<int>> Create([FromBody] CreateUserCommand command)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             var userId = await _mediator.Send(command);
             return Ok(userId);
         }

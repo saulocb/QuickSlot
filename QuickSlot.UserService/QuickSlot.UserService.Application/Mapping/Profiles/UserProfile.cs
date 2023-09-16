@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using QuickSlot.UserService.Application.CQRS.Commands;
 using QuickSlot.UserService.Domain.Entities;
 using QuickSlot.UserService.Shared.DTOs;
 
@@ -9,8 +10,8 @@ namespace QuickSlot.UserService.Application.Mapping.Profiles
     {
         public UserProfile()
         {
-            CreateMap<User, UserDTO>();
-            CreateMap<UserDTO, User>();
+            CreateMap<User, UserDTO>().ReverseMap();
+            CreateMap<CreateUserCommand, User>().ReverseMap();
         }
     }
 }

@@ -25,9 +25,9 @@ namespace QuickSlot.UserService.Application.CQRS.Queries.Handlers
             // Map User entity to UserDTO (assuming you have a mapper)
             return new UserDTO
             {
-                Id = user.PK,
-                Name = user.Name,
-                // other fields
+              Email = user.Email,
+              Sub =  user.Sub,
+
             };
         }
     }

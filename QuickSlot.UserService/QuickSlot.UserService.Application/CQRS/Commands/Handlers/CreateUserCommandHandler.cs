@@ -1,35 +1,39 @@
-﻿using MediatR;
+﻿using AutoMapper;
+using MediatR;
 using QuickSlot.UserService.Domain.Entities;
 using QuickSlot.UserService.Domain.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.Extensions.Logging;
 
 namespace QuickSlot.UserService.Application.CQRS.Commands.Handlers
 {
+
     public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, string>
     {
         private readonly IUserRepository _userRepository;
+        private readonly IMapper _mapper;
+        private readonly ILogger _logger;
 
-        public CreateUserCommandHandler(IUserRepository userRepository)
+        public CreateUserCommandHandler(IUserRepository userRepository, IMapper mapper, ILogger logger)
         {
-            _userRepository = userRepository;
+            _userRepository = userRepository ?? throw new ArgumentNullException(nameof(userRepository));
+            _mapper=mapper ?? throw new ArgumentNullException(nameof(mapper));
+            _logger=logger ?? throw new ArgumentNullException(nameof(logger));
         }
 
         public async Task<string> Handle(CreateUserCommand request, CancellationToken cancellationToken)
         {
-            var user = new User
+            try
             {
-                PK = Guid.NewGuid().ToString(),
-                SK = Guid.NewGuid().ToString(),
-                Email = request.Email,
-            };
+                var user = _mapper.Map<User>(request);
+                await _userRepository.SaveAsync(user, cancellationToken);
 
-            await _userRepository.SaveAsync(user, cancellationToken);
-
-            return user.PK;
+                return user.PK;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, ex.Message);
+                throw;
+            }
         }
     }
 }

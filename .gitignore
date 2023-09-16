@@ -107,3 +107,4 @@ QuickSlot.UserService/.vs/QuickSlot.UserService/v17/.suo
 *.cache
 *.cache
 QuickSlot.UserService/.vs/QuickSlot.UserService/v17/.suo
+/QuickSlot.UserService/QuickSlot.UserService.Api/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll

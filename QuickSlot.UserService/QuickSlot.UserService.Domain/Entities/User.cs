@@ -18,10 +18,10 @@ namespace QuickSlot.UserService.Domain.Entities
         public UserType UserType { get; set; }
 
         [DynamoDBProperty]
-        public string? Email { get; set; }
+        public string? Sub { get; set; }
 
         [DynamoDBProperty]
-        public string? PhoneNumber { get; set; }
+        public string? Email { get; set; }
     }
 
 }
