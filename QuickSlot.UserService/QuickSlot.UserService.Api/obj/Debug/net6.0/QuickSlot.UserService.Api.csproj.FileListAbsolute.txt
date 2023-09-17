@@ -70,3 +70,5 @@ C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Api\bin\Debug\net6.
 C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Api\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
 C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Api\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Api\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Api\bin\Debug\net6.0\FluentValidation.dll
+C:\aws\QuickSlot\QuickSlot.UserService\QuickSlot.UserService.Api\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll

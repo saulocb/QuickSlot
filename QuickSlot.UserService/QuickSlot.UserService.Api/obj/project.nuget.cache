@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ABvdI1igjKE1pAalEKU1vU3OekValwg/bFPG6puOFC+g6zH9eOUu0RtgbsrkyWfA8iBKE+KE/aDejP8e3wTbEA==",
+  "dgSpecHash": "NYue3FZ+2PCccwRS/mz9sNc4OaL7K1oeK4e2dMkRTJHFRAvCzkwSWTZ05KxDXzeziM8mdI4aN4SO/+4hj5vDFA==",
   "success": true,
   "projectFilePath": "C:\\aws\\QuickSlot\\QuickSlot.UserService\\QuickSlot.UserService.Api\\QuickSlot.UserService.Api.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,8 @@
     "C:\\Users\\saulo\\.nuget\\packages\\awssdk.core\\3.7.202.9\\awssdk.core.3.7.202.9.nupkg.sha512",
     "C:\\Users\\saulo\\.nuget\\packages\\awssdk.dynamodbv2\\3.7.201.11\\awssdk.dynamodbv2.3.7.201.11.nupkg.sha512",
     "C:\\Users\\saulo\\.nuget\\packages\\awssdk.extensions.netcore.setup\\3.7.7\\awssdk.extensions.netcore.setup.3.7.7.nupkg.sha512",
+    "C:\\Users\\saulo\\.nuget\\packages\\fluentvalidation\\11.7.1\\fluentvalidation.11.7.1.nupkg.sha512",
+    "C:\\Users\\saulo\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.7.1\\fluentvalidation.dependencyinjectionextensions.11.7.1.nupkg.sha512",
     "C:\\Users\\saulo\\.nuget\\packages\\mediatr\\11.1.0\\mediatr.11.1.0.nupkg.sha512",
     "C:\\Users\\saulo\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\saulo\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",

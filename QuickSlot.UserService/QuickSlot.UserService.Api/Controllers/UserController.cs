@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using FluentValidation;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using QuickSlot.UserService.Application.CQRS.Commands;
 using System;
@@ -25,14 +26,15 @@ namespace QuickSlot.UserService.Api.Controllers
         [HttpPost]
         public async Task<ActionResult<int>> Create([FromBody] CreateUserCommand command)
         {
-            if (!ModelState.IsValid)
+            try
             {
-                return BadRequest(ModelState);
+                var userId = await _mediator.Send(command);
+                return Ok(userId);
             }
-
-            var userId = await _mediator.Send(command);
-
-            return Ok(userId);
+            catch (ValidationException ve)
+            {
+                return BadRequest(new { Errors = ve.Errors });
+            }
         }
 
         [HttpGet("{key}")]

@@ -20,18 +20,10 @@ namespace QuickSlot.UserService.Application.CQRS.Commands
             Email = email;
             UserType=userType;
         }
-
-        [Required(ErrorMessage = "Sub cannot be null")]
-        [MinLength(1, ErrorMessage = "Sub cannot be empty")]
         public string? Sub { get; set; }
 
-        [Required(ErrorMessage = "Email cannot be null")]
-        [MinLength(1, ErrorMessage = "Email cannot be empty")]
-        [MaxLength(100, ErrorMessage = "Email cannot be longer than 100 characters")]
-        [EmailAddress(ErrorMessage = "Invalid email format")]
         public string? Email { get; set; }
 
-        [Required(ErrorMessage = "UserType cannot be null")]
         public UserTypeDTO UserType { get; set; }
     }
 }
