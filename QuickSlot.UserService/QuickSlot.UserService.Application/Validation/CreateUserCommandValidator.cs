@@ -28,7 +28,8 @@ namespace QuickSlot.UserService.Application.Validation
             // Validate UserType
             RuleFor(x => x.UserType)
                 .IsInEnum().WithMessage("Invalid user type")
-                .NotNull().WithMessage("UserType cannot be null");
+                .NotNull().WithMessage("UserType cannot be null")
+                .NotEmpty();
         }
     }
 
