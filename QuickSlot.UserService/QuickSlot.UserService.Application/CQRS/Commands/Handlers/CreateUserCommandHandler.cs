@@ -9,7 +9,10 @@ using QuickSlot.UserService.Domain.DomainEvents;
 namespace QuickSlot.UserService.Application.CQRS.Commands.Handlers
 {
 
-    public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, string>
+    public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, string>,
+                                            IRequestHandler<UpdateUserAddressCommand, bool>,
+                                            IRequestHandler<UpdateUserContactCommand, bool>,
+                                            IRequestHandler<UpdateUserBillPaymentMethodCommand, bool>
     {
         private readonly IUserRepository _userRepository;
         private readonly IMapper _mapper;
@@ -57,7 +60,7 @@ namespace QuickSlot.UserService.Application.CQRS.Commands.Handlers
                 await _userRepository.SaveAsync(user, cancellationToken);
 
                 // Publish the domain event
-                await _mediator.Publish(newAddress, cancellationToken);
+                await _mediator.Publish(new UserAddressUpdated(newAddress), cancellationToken);
 
                 return true;
             }
@@ -110,7 +113,7 @@ namespace QuickSlot.UserService.Application.CQRS.Commands.Handlers
                 await _userRepository.SaveAsync(user, cancellationToken);
 
                 // Publish the domain event
-                await _mediator.Publish(newBillPaymentMethod, cancellationToken);
+                await _mediator.Publish(new UserBillPaymentMethodUpdated(newBillPaymentMethod), cancellationToken);
                 return true;
 
             }

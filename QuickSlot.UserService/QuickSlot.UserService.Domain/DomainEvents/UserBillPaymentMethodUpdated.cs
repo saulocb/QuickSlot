@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using QuickSlot.UserService.Domain.Entities;
 using QuickSlot.UserService.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -10,13 +11,13 @@ namespace QuickSlot.UserService.Domain.DomainEvents
 {
     public class UserBillPaymentMethodUpdated: INotification, IDomainEvent
     {
-        public UserBillPaymentMethodUpdated(UserBillPaymentMethodUpdated newUserBillPaymentMethodUpdated)
+        public UserBillPaymentMethodUpdated(BillPaymentMethod newUserBillPaymentMethodUpdated)
         {
             NewUserBillPaymentMethodUpdated=newUserBillPaymentMethodUpdated;
         }
 
         public DateTime OccurredOn { get; } = DateTime.UtcNow;
-        public UserBillPaymentMethodUpdated NewUserBillPaymentMethodUpdated { get; }
+        public BillPaymentMethod NewUserBillPaymentMethodUpdated { get; }
 
 
     }

@@ -2,21 +2,16 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using QuickSlot.UserService.Application.CQRS.Commands;
-using System;
-using System.Collections.Concurrent;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 
 namespace QuickSlot.UserService.Api.Controllers  
 {
-    [Route("api/v1/[controller]")] 
+
+    [Route("api/v1/[controller]")]
     [ApiController]
     public class UserController : ControllerBase
     {
         private readonly IMediator _mediator;
-
-        private static readonly ConcurrentDictionary<string, string> Items = new ConcurrentDictionary<string, string>();
 
         public UserController(IMediator mediator)
         {
@@ -37,40 +32,47 @@ namespace QuickSlot.UserService.Api.Controllers
             }
         }
 
-        [HttpGet("{key}")]
-        public IActionResult Read(string key)
+        [HttpPut("address")]
+        public async Task<ActionResult<bool>> UpdateAddress([FromBody] UpdateUserAddressCommand command)
         {
-            if (Items.TryGetValue(key, out string value))
-                return Ok(new { Key = key, Value = value });
-            else
-                return NotFound();
-        }
-
-        [HttpPut("{key}")]
-        public IActionResult Update(string key, [FromBody] string newValue)
-        {
-            if (Items.ContainsKey(key))
+            try
             {
-                Items[key] = newValue;
-                return Ok(new { Key = key, Value = newValue });
+                var result = await _mediator.Send(command);
+                return Ok(result);
             }
-            else
-                return NotFound();
+            catch (ValidationException ve)
+            {
+                return BadRequest(new { Errors = ve.Errors });
+            }
         }
 
-        [HttpDelete("{key}")]
-        public IActionResult Delete(string key)
+        [HttpPut("billpaymentmethod")]
+        public async Task<ActionResult<bool>> UpdateBillPaymentMethod([FromBody] UpdateUserBillPaymentMethodCommand command)
         {
-            if (Items.TryRemove(key, out string value))
-                return NoContent();
-            else
-                return NotFound();
+            try
+            {
+                var result = await _mediator.Send(command);
+                return Ok(result);
+            }
+            catch (ValidationException ve)
+            {
+                return BadRequest(new { Errors = ve.Errors });
+            }
         }
 
-        [HttpGet]
-        public IActionResult ListAll()
+        [HttpPut("contact")]
+        public async Task<ActionResult<bool>> UpdateContact([FromBody] UpdateUserContactCommand command)
         {
-            return Ok(Items);
+            try
+            {
+                var result = await _mediator.Send(command);
+                return Ok(result);
+            }
+            catch (ValidationException ve)
+            {
+                return BadRequest(new { Errors = ve.Errors });
+            }
         }
     }
+
 }
