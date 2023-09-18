@@ -1,4 +1,5 @@
 ﻿using Amazon.CDK;
+using QuickSlot.IaC.Common.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,36 +10,29 @@ namespace Cdk
     {
         public static void Main(string[] args)
         {
+            var env = EnvironmentHelper.MakeEnv();
+            var deploySettings = SupportedDeploySettings.GetDeploySettings(env);
+
             var app = new App();
-            new CdkStack(app, "CdkStack", new StackProps
+            var envname = "dev";
+
+            // Retrieve the dynamic part of the stack name from the context
+            var stackNameSuffix = app.Node.TryGetContext("StackNameSuffix")?.ToString() ?? "quickSlot";
+            if (string.IsNullOrWhiteSpace(stackNameSuffix))
             {
-                // If you don't specify 'env', this stack will be environment-agnostic.
-                // Account/Region-dependent features and context lookups will not work,
-                // but a single synthesized template can be deployed anywhere.
+                throw new Exception("Please specify StackNameSuffix e.g. -c StackNameSuffix=TestStack");
+            }
 
-                // Uncomment the next block to specialize this stack for the AWS Account
-                // and Region that are implied by the current CLI configuration.
-                /*
-                Env = new Amazon.CDK.Environment
-                {
-                    Account = System.Environment.GetEnvironmentVariable("CDK_DEFAULT_ACCOUNT"),
-                    Region = System.Environment.GetEnvironmentVariable("CDK_DEFAULT_REGION"),
-                }
-                */
+            // Construct the full stack name
+            var stackName = $"services-{stackNameSuffix}-{envname}";
 
-                // Uncomment the next block if you know exactly what Account and Region you
-                // want to deploy the stack to.
-                /*
-                Env = new Amazon.CDK.Environment
-                {
-                    Account = "123456789012",
-                    Region = "us-east-1",
-                }
-                */
-
-                // For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html
+            new CdkStack(app, stackName, new StackProps
+            {
+                Env = env
             });
+
             app.Synth();
         }
+
     }
 }
