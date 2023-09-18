@@ -1,10 +1,11 @@
 ﻿using Amazon.CDK;
+using Cdk;
 using QuickSlot.IaC.Common.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Cdk
+namespace QuickSlot.IaC.CDK
 {
     sealed class Program
     {

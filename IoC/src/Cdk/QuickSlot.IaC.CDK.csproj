@@ -21,4 +21,12 @@
     <ProjectReference Include="..\QuickSlot.IaC.Common\QuickSlot.IaC.Common.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Stacks\BookingServiceStack\" />
+    <Folder Include="Stacks\BusinessProfileServiceStack\" />
+    <Folder Include="Stacks\BusinessAddressServiceStack\" />
+    <Folder Include="Stacks\CustomerProfileServiceStack\" />
+    <Folder Include="Stacks\UserServiceStack\" />
+  </ItemGroup>
+
 </Project>

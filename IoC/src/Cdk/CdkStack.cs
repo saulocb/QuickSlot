@@ -1,13 +1,14 @@
 using Amazon.CDK;
 using Constructs;
+using QuickSlot.IaC.CDK.Stacks.BaseStack;
 
-namespace Cdk
+namespace QuickSlot.IaC.CDK
 {
     public class CdkStack : Stack
     {
         internal CdkStack(Construct scope, string id, IStackProps props = null) : base(scope, id, props)
         {
-            // The code that defines your stack goes here
+            new BaseStack(this, "BaseStack");
         }
     }
 }
