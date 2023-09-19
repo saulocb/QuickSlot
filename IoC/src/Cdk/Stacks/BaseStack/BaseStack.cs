@@ -17,38 +17,46 @@ namespace QuickSlot.IaC.CDK.Stacks.BaseStack
             // Create a VPC with specific configurations
             var vpc = new Vpc(this, "BaseVPC", new VpcProps
             {
-                MaxAzs = 3,  // maximum availability zones
-                NatGateways = 1, // number of NAT Gateways
-
-                // Subnet configuration
+                MaxAzs = 3,
+                NatGateways = 1,
                 SubnetConfiguration = new ISubnetConfiguration[]
                 {
-                    new SubnetConfiguration
-                    {
-                        SubnetType = SubnetType.PUBLIC,
-                        Name = "PublicSubnet",
-                    },
-                    new SubnetConfiguration
-                    {
-                        SubnetType = SubnetType.PRIVATE_WITH_EGRESS,
-                        Name = "PrivateSubnetForLambda",
-                    },
-                    new SubnetConfiguration
-                    {
-                        SubnetType = SubnetType.PRIVATE_WITH_EGRESS,
-                        Name = "PrivateSubnetForDynamoDB",
-                    }
+                    new SubnetConfiguration { SubnetType = SubnetType.PUBLIC, Name = "PublicSubnet" },
+                    new SubnetConfiguration { SubnetType = SubnetType.PRIVATE_WITH_EGRESS, Name = "PrivateSubnetForLambda" },
+                    new SubnetConfiguration { SubnetType = SubnetType.PRIVATE_WITH_EGRESS, Name = "PrivateSubnetForDynamoDB" }
                 }
             });
 
             // Create Cognito User Pool
-            var userPool  =new UserPool(this, "MyUserPool", new UserPoolProps
+            var userPool = new UserPool(this, "MyUserPool", new UserPoolProps
             {
-                // Configure your user pool properties here
                 UserPoolName = "QuickSlotSignIn",
                 SignInAliases = new SignInAliases
                 {
                     Email = true
+                },
+                AutoVerify = new AutoVerifiedAttrs
+                {
+                    Email = true
+                },
+                PasswordPolicy = new PasswordPolicy
+                {
+                    MinLength = 12,
+                    RequireLowercase = true,
+                    RequireDigits = true,
+                    RequireSymbols = true,
+                    RequireUppercase = true
+                },
+                Mfa = Mfa.REQUIRED,
+                AccountRecovery = AccountRecovery.EMAIL_ONLY,
+                CustomAttributes = new Dictionary<string, ICustomAttribute>
+                {
+                    ["usertype"] = new StringAttribute(new StringAttributeProps
+                    {
+                        MinLen = 1,
+                        MaxLen = 256,
+                        Mutable = true
+                    })
                 }
             });
 

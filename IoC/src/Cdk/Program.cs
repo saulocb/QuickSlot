@@ -1,5 +1,4 @@
 ﻿using Amazon.CDK;
-using Cdk;
 using QuickSlot.IaC.Common.Helpers;
 using System;
 using System.Collections.Generic;
