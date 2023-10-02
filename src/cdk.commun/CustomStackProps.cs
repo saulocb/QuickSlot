@@ -16,7 +16,7 @@ namespace cdk.commun
             Environment env,
             string stackPrefix,
             string stackSuffix
-          )
+          , string codePath)
         {
             Env = env;
             StackPrefix = stackPrefix;
@@ -24,11 +24,13 @@ namespace cdk.commun
 
             StackName = $"{stackPrefix}-{stackSuffix}";
             Description = $"{stackPrefix} {stackSuffix}";
+            CodePath=codePath;
         }
 
         public IRestApiWrapper? RestApiWrapper { get; }
         public string StackPrefix { get; }
         public string StackSuffix { get; }
+        public string CodePath { get; set; }
     }
 
 }

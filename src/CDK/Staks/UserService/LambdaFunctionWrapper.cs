@@ -37,10 +37,10 @@ namespace apigateway_cognito_lambda_dynamodb.Staks.UserService
             {
                 Runtime = Runtime.DOTNET_6,
                 Handler = "QuickSlot.UserService.Lambda.Api::QuickSlot.UserService.Lambda.Api.Function::FunctionHandler",
-                Code = Code.FromAsset("./dist/UserFunction"), // Adjust this path
+                Code = Code.FromAsset("./dist/UserFunction"),
                 Environment = environment,
                 Timeout = Duration.Minutes(1),
-                MemorySize = 256
+                MemorySize = 256,
             });
             return this.UserFunction;
         }
